@@ -1,0 +1,19 @@
+{
+  "name": "alfred-antd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "update": "node ./updateConfig.js",
+    "postinstall": "npm run update && alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alfy": "^0.12.2",
+    "jsdom": "^19.0.0"
+  }
+}
