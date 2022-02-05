@@ -1,0 +1,19 @@
+{
+  "name": "alfred-bilibili",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "keywords": [],
+  "author": "qianyin <qianyin95@gmail.com> (https://github.com/qianyin925)",
+  "license": "MIT",
+  "dependencies": {
+    "alfy": "^0.12.2",
+    "axios": "^0.25.0",
+    "form-data": "^4.0.0"
+  }
+}
