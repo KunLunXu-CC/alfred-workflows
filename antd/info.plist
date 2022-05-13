@@ -141,7 +141,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -158,6 +158,7 @@
 				<string></string>
 				<key>script</key>
 				<string>./node_modules/.bin/run-node index.js v4 "$1"
+
 </string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -166,11 +167,11 @@
 				<key>subtext</key>
 				<string>可通过关键词进行过滤</string>
 				<key>title</key>
-				<string>「anntd3」快速打开 Antd@4.x 组件</string>
+				<string>「anntd4」快速打开 Antd@4.x 组件</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
