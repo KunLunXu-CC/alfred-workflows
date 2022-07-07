@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "v2.js",
+  "type": "module",
+  "scripts": {
+    "start": "alfy-init",
+    "clear": "alfy-cleanup",
+    "postinstall": "npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alfy": "^1.0.0",
+    "zx": "^7.0.7"
+  }
+}
