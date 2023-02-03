@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "update": "node ./updateConfig.js",
-    "postinstall": "npm run update && alfy-init",
-    "preuninstall": "alfy-cleanup"
+    "postinstall": "npm run update && alfy-init"
   },
   "keywords": [],
   "author": "",

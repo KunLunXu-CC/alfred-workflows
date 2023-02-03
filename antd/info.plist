@@ -34,6 +34,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>7236EE4F-F9AB-4DB6-A627-99CE34C2E73A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F4DA9603-BFAF-427D-B034-1C1C1C81C1A0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>902ADBB8-8D0D-43D1-BE3E-84F08BDBF89A</key>
 		<array>
 			<dict>
@@ -51,7 +64,7 @@
 		<array/>
 	</dict>
 	<key>createdby</key>
-	<string>qianyin925</string>
+	<string>墨渊君</string>
 	<key>description</key>
 	<string>输入关键词进行过滤</string>
 	<key>disabled</key>
@@ -76,7 +89,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>antd3</string>
+				<string>antd</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -88,7 +101,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node index.js v3 "$1"
+				<string>./node_modules/.bin/run-node index.js v5 "$1"
 </string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -97,7 +110,7 @@
 				<key>subtext</key>
 				<string>可通过关键词进行过滤</string>
 				<key>title</key>
-				<string>「anntd3」快速打开 Antd@3.x 组件</string>
+				<string>「anntd」快速打开 Antd 组件</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -106,7 +119,7 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>62279BFA-A837-4CF9-AB80-C282465A2973</string>
+			<string>7236EE4F-F9AB-4DB6-A627-99CE34C2E73A</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -183,23 +196,52 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>updateantdconf</string>
-				<key>subtext</key>
-				<string>将会更新 v3 以及 v4 相关的组件信息</string>
-				<key>text</key>
-				<string>「updateantdconf」更新 Antd 工作流配置</string>
-				<key>withspace</key>
+				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>antd3</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node index.js v3 "$1"
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>可通过关键词进行过滤</string>
+				<key>title</key>
+				<string>「anntd3」快速打开 Antd@3.x 组件</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>902ADBB8-8D0D-43D1-BE3E-84F08BDBF89A</string>
+			<string>62279BFA-A837-4CF9-AB80-C282465A2973</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -224,6 +266,27 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>updateantdconf</string>
+				<key>subtext</key>
+				<string>将会更新 v3 以及 v4 相关的组件信息</string>
+				<key>text</key>
+				<string>「updateantdconf」更新 Antd 工作流配置</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>902ADBB8-8D0D-43D1-BE3E-84F08BDBF89A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -232,40 +295,47 @@
 		<key>2285D864-F7EA-4CEB-97F1-B05EE2917E35</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>70</integer>
 			<key>ypos</key>
-			<integer>220</integer>
+			<integer>155</integer>
 		</dict>
 		<key>62279BFA-A837-4CF9-AB80-C282465A2973</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>70</integer>
 			<key>ypos</key>
-			<integer>30</integer>
+			<integer>310</integer>
+		</dict>
+		<key>7236EE4F-F9AB-4DB6-A627-99CE34C2E73A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>70</integer>
+			<key>ypos</key>
+			<integer>10</integer>
 		</dict>
 		<key>902ADBB8-8D0D-43D1-BE3E-84F08BDBF89A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>65</integer>
 			<key>ypos</key>
-			<integer>380</integer>
+			<integer>465</integer>
 		</dict>
 		<key>E2D8992B-65A4-47BA-A2A3-7D989A776ED3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>440</integer>
+			<integer>565</integer>
 			<key>ypos</key>
-			<integer>380</integer>
+			<integer>460</integer>
 		</dict>
 		<key>F4DA9603-BFAF-427D-B034-1C1C1C81C1A0</key>
 		<dict>
 			<key>xpos</key>
-			<integer>440</integer>
+			<integer>550</integer>
 			<key>ypos</key>
-			<integer>100</integer>
+			<integer>155</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string>www.qianyin925.com</string>
+	<string>https://www.moyuanjun.cc/</string>
 </dict>
 </plist>

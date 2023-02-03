@@ -10,9 +10,22 @@ const config = JSON.parse(
 )[versions]
 
 // 3. 过滤或者选择项
-const items = config.filter(
+const filterData = config.filter(
   v => v.title.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase())
 );
 
-// 4. 输出
-alfy.output(items.length === 0 ? config : items);
+// 4. 处理过滤后数据
+const items = (filterData.length !== 0 ? filterData : config)
+.map(v => ({
+  ...v,
+  subtitle: `打开组件: ${v.title}, 按住 cmd 打开 API`,
+  mods: {
+    cmd: {
+      arg: `${v.arg}#api`,
+      subtitle: `打开组件: ${v.title}, 并跳转至 API`,
+    },
+  },
+}))
+
+// 5. 输出
+alfy.output(items);
