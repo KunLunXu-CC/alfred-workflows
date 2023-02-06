@@ -61,7 +61,18 @@
 			</dict>
 		</array>
 		<key>E2D8992B-65A4-47BA-A2A3-7D989A776ED3</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>80F0AF2C-AFCC-48D4-87B4-0B309964C5B6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>墨渊君</string>
@@ -246,6 +257,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>updateantdconf</string>
+				<key>subtext</key>
+				<string>将会更新 v3 以及 v4 相关的组件信息</string>
+				<key>text</key>
+				<string>「updateantdconf」更新 Antd 工作流配置</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>902ADBB8-8D0D-43D1-BE3E-84F08BDBF89A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -269,21 +301,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>updateantdconf</string>
-				<key>subtext</key>
-				<string>将会更新 v3 以及 v4 相关的组件信息</string>
-				<key>text</key>
-				<string>「updateantdconf」更新 Antd 工作流配置</string>
-				<key>withspace</key>
+				<key>lastpathcomponent</key>
 				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>更新 Antd 工作流配置</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>902ADBB8-8D0D-43D1-BE3E-84F08BDBF89A</string>
+			<string>80F0AF2C-AFCC-48D4-87B4-0B309964C5B6</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -313,6 +345,13 @@
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
+		<key>80F0AF2C-AFCC-48D4-87B4-0B309964C5B6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>700</integer>
+			<key>ypos</key>
+			<integer>465</integer>
+		</dict>
 		<key>902ADBB8-8D0D-43D1-BE3E-84F08BDBF89A</key>
 		<dict>
 			<key>xpos</key>
@@ -323,9 +362,9 @@
 		<key>E2D8992B-65A4-47BA-A2A3-7D989A776ED3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>565</integer>
+			<integer>395</integer>
 			<key>ypos</key>
-			<integer>460</integer>
+			<integer>465</integer>
 		</dict>
 		<key>F4DA9603-BFAF-427D-B034-1C1C1C81C1A0</key>
 		<dict>

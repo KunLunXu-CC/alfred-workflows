@@ -55,4 +55,6 @@ const main = async () => {
   } catch {}
 }
 
-main()
+await main()
+
+console.log('更新配置成功!')
