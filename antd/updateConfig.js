@@ -13,13 +13,13 @@ const exec = util.promisify(process.exec);
  * @returns {[{ title: '标题', arg: '跳转链接' }]}
  */
 const get = async (pageUrl, componentsUrlPre) => {
-  // 1. 读取 html
+  // 1. GET 请求拿到官网 HTML
   const { stdout: body } = await exec(`curl ${pageUrl}`)
 
-  // 2. 解析 html
+  // 2. 使用 jsdom 解析 HTML
   const dom = await new JSDOM(body);
 
-  // 3. 处理数据
+  // 3. 获取所有菜单节点, 拿到我们想要的数据
   return [...dom.window.document.querySelectorAll('.main-menu-inner a')].map(v => {
     const [first, second] = v.querySelectorAll('span');
 
